@@ -1,0 +1,22 @@
+page-splash {
+#splash{
+    background: color($colors, primary);
+    h1{
+        font-size: 20px;
+        color: #ffffff;
+        margin-top: 250px;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .splashlogo{
+        align-content: center;
+        margin-left: 70px;
+    }
+    h3{
+        margin-top: 200px;
+        font-size: 15px;
+        text-align: center;
+        color: #ffffff;
+    }
+}
+}

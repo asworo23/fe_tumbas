@@ -1,0 +1,19 @@
+<ion-content padding id="signup">
+    <img src="assets/images/new.png" class="splashlogo"/>
+    <button ion-button color="fb" block class="fb-button">Facebook</button>
+    <h1>or</h1>
+    <ion-list class="form_signup">
+        <ion-item>
+            <ion-input type="text" placeholder="Username"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input type="text" placeholder="Phone Number"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input type="text" placeholder="Email"></ion-input>
+        </ion-item>
+    </ion-list>
+    <button ion-button color="primary" block (click)="signin()">Sign Up</button>
+    <h2>By registering I agree to the Terms os Services and Privacy Police</h2>
+    <h3 (click)="signin()">Already have an account yet?Signin</h3>
+</ion-content>
