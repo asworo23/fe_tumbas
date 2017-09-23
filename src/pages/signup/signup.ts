@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, IonicPage } from 'ionic-angular';
 
 import { SigninPage } from '../signin/signin';
 
+@IonicPage()
 @Component({
   selector: 'page-signup',
   templateUrl: 'signup.html'

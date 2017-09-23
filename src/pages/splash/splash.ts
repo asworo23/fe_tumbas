@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { ViewController } from 'ionic-angular';
+import { ViewController, IonicPage } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+@IonicPage()
 @Component({
   selector: 'page-splash',
   templateUrl: 'splash.html'

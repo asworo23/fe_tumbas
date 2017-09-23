@@ -3,15 +3,15 @@ import { Platform, ModalController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { SigninPage } from '../pages/signin/signin';
-import { TabsPage } from '../pages/tabs/tabs';
-import { SplashPage } from '../pages/splash/splash';
+//import { SigninPage } from '../pages/signin/signin';
+//import { TabsPage } from '../pages/tabs/tabs';
+//import { SplashPage } from '../pages/splash/splash';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = SigninPage;
+  rootPage:any = 'SigninPage';
   //rootPage:any = SplashPage;
 
   constructor(platform: Platform, modalCtrl: ModalController,statusBar: StatusBar, splashScreen: SplashScreen) {
@@ -20,8 +20,8 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       //splashScreen.hide();
-      let splash = modalCtrl.create(SplashPage);
-      splash.present();
+      //let splash = modalCtrl.create(SplashPage);
+      //splash.present();
     });
   }
 }
