@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, IonicPage } from 'ionic-angular';
 
-import { SigninPage } from '../signin/signin';
+//import { SigninPage } from '../signin/signin';
 
 @IonicPage()
 @Component({
@@ -14,7 +14,7 @@ export class SignupPage {
 
   }
   signin(){
-    this.navCtrl.push(SigninPage);
+    this.navCtrl.push("SigninPage");
   }
 
 }
