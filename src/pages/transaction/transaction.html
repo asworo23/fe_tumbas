@@ -12,8 +12,73 @@
       </button>
     </ion-buttons>
   </ion-navbar>
+    <ion-segment [(ngModel)]="transaksi">
+      <ion-segment-button value="tunggu">
+        Tunggu
+      </ion-segment-button>
+      <ion-segment-button value="proses">
+        Proses
+      </ion-segment-button>
+      <ion-segment-button value="selesai">
+        Selesai
+      </ion-segment-button>
+      <ion-segment-button value="batal">
+        Batal
+      </ion-segment-button>
+    </ion-segment>
 </ion-header>
+ 
+<ion-content id="trans-font">
+  <!-- Button float -->
+  <ion-fab right bottom>
+    <button ion-fab color="secondary" mini><ion-icon name="map"></ion-icon></button>
+  </ion-fab>
+  <div [ngSwitch]="transaksi">
+    <ion-list *ngSwitchCase="'tunggu'">
+      <ion-item>
+        <h1>Order ID - #123456</h1>
+        <h2>Waktu: 8 Juni 2017</h2>
+        <h2>Quantity: 4 items</h2>
+        <h2>Total Belanja: Rp 63.000</h2>
+        <button ion-button clear item-end>Detail</button>
+      </ion-item>
+    </ion-list>
 
-<ion-content padding>
+    <ion-list *ngSwitchCase="'proses'">
+      <ion-item>
+        <h1>Order ID - #243126</h1>
+        <h2>Waktu: 8 Juni 2017</h2>
+        <h2>Quantity: 10 items</h2>
+        <h2>Total Belanja: Rp 163.000</h2>
+        <button ion-button clear item-end>Detail</button>
+      </ion-item>
+      <ion-item>
+        <h1>Order ID - #649872</h1>
+        <h2>Waktu: 8 Juni 2017</h2>
+        <h2>Quantity: 2 items</h2>
+        <h2>Total Belanja: Rp 24.000</h2>
+        <button ion-button clear item-end>Detail</button>
+      </ion-item>
+    </ion-list>
 
+    <ion-list *ngSwitchCase="'selesai'">
+      <ion-item>
+        <h1>Order ID - #243126</h1>
+        <h2>Waktu: 7 Juni 2017</h2>
+        <h2>Quantity: 15 items</h2>
+        <h2>Total Belanja: Rp 223.000</h2>
+        <button ion-button clear item-end>Detail</button>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'batal'">
+      <ion-item>
+        <h1>Order ID - #342541</h1>
+        <h2>Waktu: 6 Juni 2017</h2>
+        <h2>Quantity: 3 items</h2>
+        <h2>Total Belanja: Rp 32.000</h2>
+        <button ion-button clear item-end>Detail</button>
+      </ion-item>
+    </ion-list>
+  </div>
 </ion-content>
