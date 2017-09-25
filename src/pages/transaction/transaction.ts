@@ -11,5 +11,8 @@ export class TransactionPage {
   constructor(public navCtrl: NavController) {
 
   }
+  searching(){
+    this.navCtrl.push("SearchingPage");
+  }
 
 }

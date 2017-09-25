@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar color="primary">
-    <ion-searchbar></ion-searchbar>
+    <ion-searchbar (click)="searching()"></ion-searchbar>
     <ion-buttons end>
       <button ion-button icon-only color="royal">
         <ion-icon name="notifications"></ion-icon>
@@ -14,6 +14,47 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+  <!-- Slider -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img  class="swiper-img" alt="" src="assets/images/slide_1.jpg">
+      </div>
+    </div>
+  </div>
 
+  <!-- Konten Judul Kategori -->
+    <div id="content">
+      <div class="content-top">
+        <span></span>
+        <h2>Sayur Daun</h2>
+        <div class="content-more">
+          Lihat semua >
+        </div>
+      </div>
+    </div>
+  <!-- Konten Produk Kategori -->
+    <div padding text-uppercase dark (swipe)="onSwipeContent()">
+      <ion-scroll scrollX="true" class="scroll-products">
+        <div class="item-products">
+          <img class="image-product" src="assets/images/seckill_1.jpg" />   
+            <div class="discount-product">
+              <span light>10%</span>
+            </div>  
+            <div class="name-product">
+              Sayur Bayam
+            </div>
+            <div class="real-price">
+              <span>Rp 3.500</span>
+            </div>
+            <div class="price-product">
+              Rp 4.000  
+            </div>    
+            <span class="button-buy">
+              <button ion-button block small color="success">Beli</button>
+            </span>         
+        </div>
+      </ion-scroll>
+    </div>
 </ion-content>

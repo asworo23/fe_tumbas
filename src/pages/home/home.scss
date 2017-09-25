@@ -1,3 +1,61 @@
 page-home {
 
+	/* CSS Slider*/
+	.swiper-container {
+    	width: 100%;
+		height: 150px;
+		text-align: center;
+		font-size: 25px;
+		color: #fff;
+	.swiper-slide {
+
+		}
+    .swiper-img {
+      	min-height: 100%;
+		width: 100%;
+		height: auto;
+		position: fixed;
+		top: 0;
+		left: 0;
+		}
+	}
+
+	/*CSS Konten Judul Kategori*/
+  	#content {
+    	margin:10px 5px;
+    	
+		}
+  	.content-top {
+    	height:32px;
+    	overflow:hidden;
+  		}
+  	.content-top h2 {
+    	float:left;
+    	font-size:15px;
+    	line-height:35px;
+		margin-left: 10px;
+    	margin-top: 0px;
+		}
+  	.content-more {
+    	float:right;
+		color:#F9690E;
+    	line-height:35px;
+    	margin-right:10px;
+    	font-size:12px;
+		}
+	/*CSS Konten Produk Kategori*/
+	.discount-product{
+		position: absolute;
+		background: #ff1b21;
+		color: #ffffff;
+		border: solid 5px #ff1b21;
+		top:2px;
+		margin: 1px;
+		border-radius: 50% !important;
+	}
+	.image-product{
+		width: inherit;
+		height: 100px;
+	}
+	
 }
