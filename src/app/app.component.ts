@@ -11,7 +11,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = 'SigninPage';
+  rootPage:any = 'SlidesPage';
   //rootPage:any = SplashPage;
 
   constructor(platform: Platform, modalCtrl: ModalController,statusBar: StatusBar, splashScreen: SplashScreen) {
